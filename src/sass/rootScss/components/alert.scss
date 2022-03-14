@@ -1,0 +1,45 @@
+.alert-danger {
+  color: $c-red;
+  background-color: $c-c4;
+}
+
+.alert-success {
+  color: $c-green;
+  background-color: $c-c4;
+}
+
+.alert-warning {
+  color: $c-yellow;
+  background-color: $c-c4;
+}
+
+.alert-info {
+  color: $c-yellow;
+  background-color: $c-c4;
+}
+
+.notification-error {
+  background-color: $c-white;
+  box-shadow: 0 0 1rem rgba($c-black, 0.1);
+}
+
+.notification-error .message {
+  color: $c-red;
+}
+
+.notification-error::before {
+  color: $c-red;
+}
+
+.notification-success {
+  background-color: $c-white;
+  box-shadow: 0 0 1rem rgba($c-black, 0.1);
+}
+
+.notification-success::before {
+  color: $c-green;
+}
+
+.notification-success .message {
+  color: $c-green;
+}

@@ -1,0 +1,59 @@
+
+// margin bottom
+.mb-s-sm {
+  margin-bottom: 1rem !important;
+}
+// margin left
+.ml-s-sm {
+  margin-left: 1rem !important;
+}
+// margin top
+.mt-s-sm {
+  margin-top: 1rem !important;
+}
+// text casess
+.text-center {
+  text-align: center !important;
+}
+.upper {
+  text-transform: uppercase;
+}
+.cap {
+  text-transform: capitalize;
+}
+.lower {
+  text-transform: lowercase;
+}
+// Font Size
+.font-16 {
+  font-size: $font-16;
+}
+.font-18 {
+  font-size: $font-18;
+}
+.font-24 {
+  font-size: $font-24;
+}
+// width
+.w-100 {
+  width: 100% !important;
+}
+// Weight
+.weight-400 {
+  font-weight: $weight-400;
+}
+.weight-700 {
+  font-weight: $weight-700;
+}
+// cursor
+.cursor {
+  &:hover {
+    cursor: pointer;
+  }
+}
+// Link
+a {
+  color: $c-black;
+  text-decoration: none;
+  text-decoration: none;
+}

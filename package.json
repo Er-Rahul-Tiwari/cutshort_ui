@@ -1,0 +1,61 @@
+{
+  "name": "test_project",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@popperjs/core": "^2.11.2",
+    "@testing-library/jest-dom": "^5.16.1",
+    "@testing-library/react": "^12.1.2",
+    "@testing-library/user-event": "^13.5.0",
+    "path-browserify": "^1.0.1",
+    "react": "^17.0.2",
+    "react-scripts": "5.0.0",
+    "react-simple-tree-menu": "^1.1.18",
+    "web-vitals": "^2.1.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "dev": "react-scripts start",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "axios": "^0.24.0",
+    "babel-plugin-root-import": "^6.6.0",
+    "classnames": "^2.3.1",
+    "dotenv-webpack": "^7.0.3",
+    "node-sass": "^7.0.0",
+    "react-app-polyfill": "^3.0.0",
+    "react-dom": "^17.0.2",
+    "react-notifications": "^1.7.3",
+    "react-redux": "^7.2.6",
+    "react-router-dom": "^5.2.0",
+    "react-switch": "^6.0.0",
+    "reactstrap": "^9.0.1",
+    "redux": "^4.1.2",
+    "redux-devtools-extension": "^2.13.9",
+    "redux-thunk": "^2.4.1",
+    "styled-components": "^5.3.3",
+    "uuid": "^8.3.2"
+  },
+  "proxy": "http://localhost:5000"
+}

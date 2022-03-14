@@ -1,0 +1,28 @@
+%heading {
+  font-weight: $weight-700;
+  font-family: $font-display;
+  color: $c-black;
+  line-height: 1;
+}
+
+.heading-2 {
+  @extend %heading;
+  font-size: $font-30;
+  // MEDIA QUERY
+  @media only screen and (max-width: $bp-medium) {
+    font-size: $font-24;
+  }
+}
+.heading-3 {
+  @extend %heading;
+  font-size: $font-24;
+  // MEDIA QUERY
+  @media only screen and (max-width: $bp-medium) {
+    font-size: $font-20;
+  }
+}
+.heading-4 {
+  @extend %heading;
+  font-size: $font-18;
+  // MEDIA QUERY
+}
