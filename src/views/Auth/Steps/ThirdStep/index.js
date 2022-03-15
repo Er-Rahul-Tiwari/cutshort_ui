@@ -74,7 +74,7 @@ const Login = ({ redirect_step_four, errorList, loading, history }) => {
             </div>
 
             <Button
-              className="btn"
+              className="btn step__btn"
               onClick={(e) => redirect_step_four(history)}
             >
               {Constants.CREATE_WORKSPACE}

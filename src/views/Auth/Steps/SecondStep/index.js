@@ -6,10 +6,9 @@ import { Button, Form, Input } from "reactstrap";
 import Alert from "views/Notifications/Alert";
 import logo from "assets/logo/logo.png";
 import * as Constants from "constants/index";
-import {redirect_step_third} from "actions/auth";
+import { redirect_step_third } from "actions/auth";
 
-
-const Login = ({ redirect_step_third,errorList, loading, history }) => {
+const Login = ({ redirect_step_third, errorList, loading, history }) => {
   const onSubmit = (e) => {
     e.preventDefault();
   };
@@ -71,30 +70,34 @@ const Login = ({ redirect_step_third,errorList, loading, history }) => {
                   <span className="step__optional">({Constants.OPTIONAL})</span>
                 </span>
               </label>
-              <div className='step__urls'>
-
-              <Input
-                className="form__input form__input--left"
-                type="text"
-                name="display_name"
-                disabled={true}
-                maxLength="50"
-                minLength="5"
-                aria-describedby={`${Constants.FIXED_URL}`}
-                placeholder={`${Constants.FIXED_URL}`}
-              />
-              <Input
-                className="form__input form__input--right"
-                type="text"
-                name="display_name"
-                maxLength="50"
-                minLength="5"
-                aria-describedby="Steve Jobs"
-                placeholder="Steve Jobs"
-              />
+              <div className="step__urls">
+                <Input
+                  className="form__input form__input--left"
+                  type="text"
+                  name="display_name"
+                  disabled={true}
+                  maxLength="50"
+                  minLength="5"
+                  aria-describedby={`${Constants.FIXED_URL}`}
+                  placeholder={`${Constants.FIXED_URL}`}
+                />
+                <Input
+                  className="form__input form__input--right"
+                  type="text"
+                  name="display_name"
+                  maxLength="50"
+                  minLength="5"
+                  aria-describedby="Steve Jobs"
+                  placeholder="Steve Jobs"
+                />
               </div>
             </div>
-            <Button className="btn" onClick={(e) => redirect_step_third(history)}>{Constants.CREATE_WORKSPACE}</Button>
+            <Button
+              className="btn step__btn"
+              onClick={(e) => redirect_step_third(history)}
+            >
+              {Constants.CREATE_WORKSPACE}
+            </Button>
           </div>
         </Form>
       </div>
@@ -115,4 +118,4 @@ const mapStateToProps = (state) => ({
   loading: state.auth.loading,
 });
 
-export default connect(mapStateToProps, {redirect_step_third})(Login);
+export default connect(mapStateToProps, { redirect_step_third })(Login);
