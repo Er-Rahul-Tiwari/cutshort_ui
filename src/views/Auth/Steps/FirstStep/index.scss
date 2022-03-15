@@ -6,7 +6,9 @@
   align-items: center;
   justify-items: center;
   align-content: center;
-  height: 100vh;
+  min-height: 100vh;
+  max-height: 100% !important;
+  margin: 3rem 0;
 
   &__logo {
     display: grid;
@@ -69,6 +71,10 @@
       height: 1px;
       width: 100%;
       z-index: 2;
+
+      &__blue{
+        background-color: $c-blue;
+      }
     }
     &--countings {
       width: 125%;

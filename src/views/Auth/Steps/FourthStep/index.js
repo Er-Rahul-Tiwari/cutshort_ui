@@ -23,7 +23,7 @@ const Login = ({ redirect_step_first,errorList, loading, history }) => {
           <h3 className="heading-3">{Constants.LOGO_NAME}</h3>
         </div>
         <div className='step__progress'>
-        <div className='step__progress--line'>
+        <div className='step__progress--line step__progress--line__blue'>
         </div>
         <div className='step__progress--countings'>
           <div className='step__progress--circle step__progress--circle-blue'>1</div>
